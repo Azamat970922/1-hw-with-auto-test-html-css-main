@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>It-incubator precourse</title>
@@ -10,21 +14,21 @@
     <!-- Необходимо создать html-элементы там, где это нужно, в соответствии с правилами семантической разметки -->
     <!-- ⚠️ Атрибут data-cy удалять нельзя! Он учавствует в проверке. Если его удалить, тесты не пройдут. -->
 
-    <header>
+    <header class="header">
         <span>IT-INCUBATOR</span>
     </header>
 
-    <section data-cy="hw1-section-main-pre">
+    <section class="main-section" data-cy="hw1-section-main-pre">
         <!-- 1) В этом разделе создай 3 дочерних элемента: -->
-        <h1>Нагайбеков Азамат Умирсерикулы</h1>
-        <p>Работаю на предприятии.Изучая Веб программирование и английский язык.Учусь в itincubator</p>
-        <img src="./images/image.png" alt="error"/>
+        <h1 class="main-title">Нагайбеков Азамат Умирсерикулы</h1>
+        <p class="main-text">Работаю на предприятии.Изучая Веб программирование и английский язык.Учусь в itincubator</p>
+        <img class="main-image" src="./images/image.png" alt="">
         <!-- a) Заголовок первого уровня со своим ФИО -->
         <!-- b) Несколько строк о себе: где учишься или работаешь, хобби, увлечения. Используй тег для абзаца. Длина строки должна быть больше 50-ти симвов (пробелы и др знаки припинания тоже считаются символом) -->
         <!-- c) Фото (или любую картинку из интернета). Не забудь добавить описание на случай, если изображение не загрузится -->
     </section>
 
-    <section data-cy="hw1-section-about-pre">
+    <section class="about-section" data-cy="hw1-section-about-pre">
         <select>
             <option >Караганда</option>
             <option selected>Балхаш</option>
@@ -33,11 +37,11 @@
         </select>
         <!-- 2) В этом разделе создай выпадающий список с разными городами (не меньше 3-х). Свой город сделай вторым в этом списке. С помощью специального атрибута, сделай так, чтобы твой город всегда был выбранным по умолчанию  -->
         <div data-cy="hw1-unordered-list-box-pre">
-            <h2>Любимые книги</h2>
-            <ul>
-                <li>Sapiens</li>
-                <li>Критическое мышление</li>
-                <li>HTML&CSS</li>
+            <h2 class="section-title">Любимые книги</h2>
+            <ul class="framework-list">
+                <li><img src="./images/image2.svg" >Sapiens</li>
+                <li><img src="./images/image2.svg">Критическое мышление</li>
+                <li><img src="./images/image2.svg">HTML&CSS</li>
             </ul>
             <!-- 3) В этом разделе создай 2 дочерних элемента: -->
 
@@ -45,8 +49,8 @@
             <!-- b) Маркированный список. В списке должно быть не менее 3-х элементов -->
         </div>
         <div data-cy="hw1-ordered-list-box-pre">
-            <h2>Любимые фильмы</h2>
-            <ol>
+            <h2 class="section-title">Любимые фильмы</h2>
+            <ol class="books-list">
                 <li>Split</li>
                 <li>Джентельмены</li>
                 <li>Озарк</li>
@@ -57,12 +61,12 @@
             <!-- b) Нумерованный (упорядоченный) список. В списке должно быть не менее 3-х элементов -->
         </div>
         <div data-cy="hw1-skills-box-pre">
-            <h2>Мои скиллы</h2>
+            <h2 class="section-title">Мои скиллы</h2>
             <label for="">
                 <input type="checkbox" name="html" checked>
                 HTML5
             </label>
-            <label for="">
+            <label class="label" for="">
                 <input type="checkbox" name="css" checked>
                 CSS3
             </label>
@@ -81,10 +85,11 @@
                 - Отметь "галочкой" (с помощью специального атрибута) темы, которые ты уже знаешь. -->
         </div>
         <form name="skills">
-            <input placeholder="Новый скилл">
+            <input class="text-field" placeholder="Новый скилл">
+            <button class="btn">Добавить</button>
         </form>
-        <button type="button">Добавить</button>
-        <hr>
+
+        <hr class="line">
         
         <!-- 5) Создай здесь однострочное поле для ввода текста с подсказкой "Новый скилл", которая исчезает, когда начинаешь что-то печатать (для подсказки есть специальный атрибут) -->
         <!-- 6) Создай здесь кнопку “Добавить” -->
@@ -124,9 +129,8 @@
        
     </section>
     <footer data-cy="hw-footer-pre">
-        <a href="https://it-incubator.io/">itincubator</a>
+        <a class="footer-link" href="https://it-incubator.io/">it-incubator</a>
         <!-- 9) Создай здесь ссылку на наш сайт https://it-incubator.io/ (текст ссылки должен быть it-incubator) -->
-    </footer>
-    
+    </footer>   
 </body>
 </html>
