@@ -39,12 +39,14 @@ header {
     width: 1440px;
     background: #fafaff;
     min-height: 100vh;
+    padding: 60px 0;
 }
 
 .main-title {
     font-weight: 700;
     font-size: 48px; 
     padding: 60px 0 20px;
+    margin-bottom: 20px;    
 }
 
 .main-text {
@@ -59,10 +61,11 @@ header {
 .about-section {
     width: 1440px;
     background-color: #FFFFFF;
-    padding: 60px 0;
+    padding: 100px 0;
 }
 
 select {
+    background-repeat: no-repeat;
     width: 150px;
     height: 36px;
 }
@@ -70,26 +73,29 @@ select {
 .section-title {
     font-weight: 700;
     font-size: 24px;
+    margin-bottom: 25px;
 }
 
 .frameworks-list {
     width: 80px;
     height: 57px;
-    padding-left: 20px;
+    padding: 0 20px;
 }
 
 .books-list {
-    width: 670px;
-    height: 57px;
-    padding-left: 20px;
+    font-weight: 400px;
+    font-size: 16px;
+    padding: 0 20px;
 }
 
 .label {
+    font-size: 16px;
     width: 475px;
     height: 19px;
 }
 
 .text-field {
+    font-size: 16px;
     width: 330px;
     height: 36px;
     border-radius: 4px;
@@ -102,7 +108,7 @@ select {
     height: 36px;
     font-weight: 700;
     font-size: 14px;
-    color: #fff;
+    color: rgb(255, 255, 255)
 }
 
 .line {
@@ -113,6 +119,7 @@ select {
 }
 
 table {
+    font-size: 14px;
     border-collapse: collapse;
     width: 300px;
     height: 196px;
@@ -123,18 +130,20 @@ th {
     font-weight: 700;
     font-size: 14px;
     text-align: center;
+    padding: 12px 15px;
 }
 
 td {
     font-weight: 400;
     font-size: 14px;
-    padding: 10px 15px;
+    padding: 12px 15px;
 }
 
 footer {
     background: rgba(163, 167, 255, 0.3);
     width: 1440px;
     height: 70px;
+    padding: 26px 0;
 }
 
 .footer-link {
